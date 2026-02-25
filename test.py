@@ -10,7 +10,7 @@ conn = mysql.connector.connect(
   host="localhost",
   user="root",
   password="actowiz",
-  database="vishal"
+  database="flight"
 )
 
 cursor = conn.cursor()
@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS flight_data (
     AirLine_Code VARCHAR(50),
     Price INT,                     
     CabinClass VARCHAR(25),
-    Hand_Baggage VARCHAR(50),
+    Hand_Baggage VARCHAR(50),   
     RefundableType VARCHAR(50),
     MealAvailable BOOLEAN,
     Rating FLOAT
